@@ -14,3 +14,26 @@ jobs:
       - name: Mostrar mensaje de éxito
         run: |
           echo "¡Commit exitoso en la rama develop!"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Cambia la versión de Node.js si es necesario
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar código
+        run: npm run build  # Reemplaza con tu script de compilación
+
+      - name: Mostrar mensaje de éxito
+        run: |
+          echo "¡Commit exitoso en la rama main!"
+          echo "¡Código compilado correctamente!"
