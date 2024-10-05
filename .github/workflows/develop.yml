@@ -1,0 +1,10 @@
+name: WorkFlow - Develop
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
