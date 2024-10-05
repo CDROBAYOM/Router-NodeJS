@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Cambia la versión de Node.js si es necesario
+          node-version: '20.17.0' # Cambia la versión de Node.js si es necesario
 
       - name: Instalar dependencias
         run: npm ci
