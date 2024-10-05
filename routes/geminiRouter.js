@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 // Conexión con gemini-AI
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-const genAI = new GoogleGenerativeAI('AIzaSyAl1EnkrOQSV7rBXkm9qYt0KrybaXnVLCM');
+const genAI = new GoogleGenerativeAI('');
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 
