@@ -1,4 +1,4 @@
-const { Storage } = require('@google-cloud/storage');
+/* const { Storage } = require('@google-cloud/storage');
 
 async function leerArchivo(nombreBucket, nombreArchivo) {
   const storage = new Storage();
@@ -19,3 +19,4 @@ const nombreBucket = 'mi-bucket';
 const nombreArchivo = 'mi-archivo.txt';
 
 leerArchivo(nombreBucket, nombreArchivo);
+ */

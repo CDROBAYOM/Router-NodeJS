@@ -1,9 +1,9 @@
-name: Carga de commit exitoso
+name: Mensaje de commit exitoso
 
 on:
   push:
     branches:
-      - develop
+      - develop  # Cambia 'main' por la rama que desees
 
 jobs:
   build:
@@ -12,18 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.17.0' # Cambia la versión de Node.js si es necesario
-
-      - name: Instalar dependencias
-        run: npm ci
-
-      - name: Compilar código
-        run: npm run build  # Reemplaza con tu script de compilación
-
       - name: Mostrar mensaje de éxito
         run: |
-          echo "¡Commit exitoso en la rama main!"
-          echo "¡Código compilado correctamente!"
+          echo "¡Commit exitoso en la rama Develop!"
