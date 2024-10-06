@@ -1,0 +1,17 @@
+name: Mensaje de commit exitoso
+
+on:
+  push:
+    branches:
+      - develop  # Cambia 'main' por la rama que desees
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Mostrar mensaje de éxito
+        run: |
+          echo "¡Commit exitoso en la rama Develop!"

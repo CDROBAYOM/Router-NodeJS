@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Conexión con Telegram
 const TelegramBot = require('node-telegram-bot-api');
-const token = '';
+const token = '7603008419:AAElMcO05UxLvZH9ncl2aGNyvSPGyvmxlVs';
 const bot = new TelegramBot(token, {polling: true});
 
 router.get('/',  (req, res) => {
@@ -20,3 +20,4 @@ router.get('/',  (req, res) => {
 });
 
 module.exports = router;
+
